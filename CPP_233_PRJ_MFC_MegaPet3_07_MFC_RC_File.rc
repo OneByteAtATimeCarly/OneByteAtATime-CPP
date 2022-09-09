@@ -1,0 +1,201 @@
+//PRJ - MegaPet3 - MFC GUI Game - 2006 - C. S. Germany
+//File 7 of 7: MFC RC File
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+// Microsoft Visual C++ generated resource script.
+//
+#include "CPP_232_PRJ_MFC_MegaPet3_06_Resources.h"
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+#endif    // APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+IDD_Interface DIALOGEX 0, 0, 436, 335
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MegaPet 1.5"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "EXIT",B_QUIT,288,169,0,0,BS_BITMAP
+    EDITTEXT        CE_MainOutput,119,20,190,147,ES_MULTILINE | ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP,WS_EX_TRANSPARENT
+    PUSHBUTTON      "START",B_START,227,169,0,0,BS_BITMAP
+    CONTROL         "",PC_PET_1,"Static",SS_BITMAP | SS_CENTERIMAGE | WS_BORDER,34,20,76,61
+    CONTROL         "",PC_PET_2,"Static",SS_BITMAP | SS_CENTERIMAGE | WS_BORDER,314,20,76,61
+    CTEXT           "Pet 1",CS_Pet1_Label,37,9,71,8
+    CTEXT           "Pet 2",CS_Pet2_Label,316,10,71,8
+    CTEXT           "Tournament Status",CS_MainOutput_Label,174,8,74,13
+    PUSHBUTTON      "LOAD",B_PET1_LOAD,35,85,24,12
+    PUSHBUTTON      "NEW",B_PET1_NEW,86,85,24,12
+    PUSHBUTTON      "SAVE",B_PET1_SAVE,60,85,24,12
+    PUSHBUTTON      "TRAIN",B_PET1_TRAIN,35,100,24,12
+    PUSHBUTTON      "FEED",B_PET1_FEED,60,100,24,12
+    PUSHBUTTON      "PLAY",B_PET1_PLAY,86,100,24,12
+    PUSHBUTTON      "TALK",B_PET1_TALK,35,115,24,12
+    PUSHBUTTON      "SLEEP",B_PET1_SLEEP,60,115,24,12
+    PUSHBUTTON      "KICK",B_PET1_KICK,86,115,24,12
+    PUSHBUTTON      "ATTACK",B_PET1_ATTACK,35,129,36,12
+    PUSHBUTTON      "DEFEND",B_PET1_DEFEND,74,129,36,12
+    PUSHBUTTON      "SPECIAL ATTACK",B_PET1_SPEC_ATTACK,35,143,74,12
+    PUSHBUTTON      "SPECIAL DEFEND",B_PET1_SPEC_DEFEND,35,157,74,12
+    PUSHBUTTON      "HELP",B_HELP,248,172,29,11
+    PUSHBUTTON      "LOAD",B_PET2_LOAD,315,85,24,12
+    PUSHBUTTON      "NEW",B_PET2_NEW,366,85,24,12
+    PUSHBUTTON      "SAVE",B_PET2_SAVE,340,85,24,12
+    PUSHBUTTON      "TRAIN",B_PET2_TRAIN,315,100,24,12
+    PUSHBUTTON      "FEED",B_PET2_FEED,340,100,24,12
+    PUSHBUTTON      "PLAY",B_PET2_PLAY,366,100,24,12
+    PUSHBUTTON      "TALK",B_PET2_TALK,315,115,24,12
+    PUSHBUTTON      "SLEEP",B_PET2_SLEEP,340,115,24,12
+    PUSHBUTTON      "KICK",B_PET2_KICK,366,115,24,12
+    PUSHBUTTON      "ATTACK",B_PET2_ATTACK,315,129,36,12
+    PUSHBUTTON      "DEFEND",B_PET2_DEFEND,354,129,36,12
+    PUSHBUTTON      "SPECIAL ATTACK",B_PET2_SPEC_ATTACK,315,143,74,12
+    PUSHBUTTON      "SPECIAL DEFEND",B_PET2_SPEC_DEFEND,315,157,74,12
+    LTEXT           "Health",CS_LABEL_PET1_HEALTH,37,197,22,8
+    CTEXT           "",CS_PET1_BOX_HEALTH,66,197,43,9,WS_BORDER
+    LTEXT           "Name",CS_LABEL_PET1_NAME,37,173,19,8
+    CTEXT           "",CS_PET1_BOX_NAME,66,173,43,9,WS_BORDER
+    LTEXT           "Speed",CS_LABEL_PET1_SPEED,37,209,21,8
+    CTEXT           "",CS_PET1_BOX_SPEED,66,209,43,9,WS_BORDER
+    LTEXT           "Str.",CS_LABEL_PET1_STRENGTH,37,222,13,8
+    CTEXT           "",CS_PET1_BOX_STRENGTH,66,222,43,9,WS_BORDER
+    LTEXT           "Sp. Atk.",CS_LABEL_PET1_SPCATK,37,260,27,8
+    CTEXT           "",CS_PET1_BOX_SPCATK,66,260,43,9,WS_BORDER
+    LTEXT           "Sp. Def.",CS_LABEL_PET1_SPCDEF,36,273,28,8
+    CTEXT           "",CS_PET1_BOX_SPCDEF,66,273,43,9,WS_BORDER
+    LTEXT           "Atk.",CS_LABEL_PET1_ATK,37,235,14,8
+    CTEXT           "",CS_PET1_BOX_ATK,66,235,43,9,WS_BORDER
+    LTEXT           "Def.",CS_LABEL_PET1_DEF,37,248,15,8
+    CTEXT           "",CS_PET1_BOX_DEF,66,248,43,9,WS_BORDER
+    LTEXT           "Health",CS_LABEL_PET2_HEALTH,317,198,22,8
+    CTEXT           "",CS_PET2_BOX_HEALTH,346,197,43,9,WS_BORDER
+    LTEXT           "Name",CS_LABEL_PET2_NAME,317,173,19,8
+    CTEXT           "",CS_PET2_BOX_NAME,346,173,43,9,WS_BORDER
+    LTEXT           "Speed",CS_LABEL_PET2_SPEED,317,211,21,8
+    CTEXT           "",CS_PET2_BOX_SPEED,346,210,43,9,WS_BORDER
+    LTEXT           "Str.",CS_LABEL_PET2_STRENGTH,317,223,13,8
+    CTEXT           "",CS_PET2_BOX_STRENGTH,346,223,43,9,WS_BORDER
+    LTEXT           "Sp. Atk.",CS_LABEL_PET2_SPCATK,317,261,27,8
+    CTEXT           "",CS_PET2_BOX_SPCATK,346,260,43,9,WS_BORDER
+    LTEXT           "Sp. Def.",CS_LABEL_PET2_SPCDEF,317,273,28,8
+    CTEXT           "",CS_PET2_BOX_SPCDEF,346,273,43,9,WS_BORDER
+    LTEXT           "Atk.",CS_LABEL_PET2_ATK,317,236,14,8
+    CTEXT           "",CS_PET2_BOX_ATK,346,235,43,9,WS_BORDER
+    LTEXT           "Def.",CS_LABEL_PET2_DEF,317,249,15,8
+    CTEXT           "",CS_PET2_BOX_DEF,346,248,43,9,WS_BORDER
+    PUSHBUTTON      "BEGIN T",B_BEGIN_TOURNAMENT,119,170,36,11
+    PUSHBUTTON      "END T",B_END_TOURNAMENT,157,170,37,11
+    EDITTEXT        CE_PET1_STATUS,113,218,93,100,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        CE_PET2_STATUS,218,217,93,101,ES_MULTILINE | ES_AUTOHSCROLL
+    CTEXT           "Pet 1 Status",CS_PET1_LABEL_STATUS,125,208,70,8
+    CTEXT           "Pet 2 Status",CS_PET2_LABEL_STATUS,233,208,70,8
+    CONTROL         "",SC_PET1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,31,316,71,8
+    CONTROL         "",SC_PET2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,322,317,71,8
+    LTEXT           "Pet1 Health Meter",CS_PET1_LABEL_HEATHMETER,39,300,59,8
+    CTEXT           "0",CS_PET1_HM_0,31,308,8,8
+    CTEXT           "50",CS_PET1_HM_50,62,308,8,8
+    CTEXT           "100",CS_PET1_HM_100,93,308,12,8
+    LTEXT           "Pet2 Health Meter",CS_PET2_LABEL_HEATHMETER,330,302,59,8
+    CTEXT           "0",CS_PET2_HM_0,322,310,8,8
+    CTEXT           "50",CS_PET2_HM_50,354,310,8,8
+    CTEXT           "100",CS_PET2_HM_100,384,310,12,8
+    EDITTEXT        CE_INPUT,119,193,142,12,ES_AUTOHSCROLL
+    CTEXT           "Input",CS_INPUT,173,185,33,8
+    CTEXT           "",CS_PET1_BOX_SPCABILENERGY,66,286,43,9,WS_BORDER | NOT WS_GROUP
+    LTEXT           "SA Enrg",CS_LABEL_PET1_SPCABILENERGY,36,286,26,8
+    CTEXT           "",CS_PET2_BOX_SPCABILENERGY,346,286,43,9,WS_BORDER | NOT WS_GROUP
+    LTEXT           "SA Enrg",CS_LABEL_PET2_SPCABILENERGY,317,286,26,8
+    DEFPUSHBUTTON   "ENTER",B_ENTER,267,193,36,12
+    CTEXT           "",CS_PET1_BOX_SPECIES,66,185,43,9,WS_BORDER | NOT WS_GROUP
+    LTEXT           "Species",CS_LABEL_PET1_SPECIES,36,185,25,8
+    CTEXT           "",CS_PET1_BOX_SPECIES2,346,185,43,9,WS_BORDER | NOT WS_GROUP
+    LTEXT           "Species",CS_LABEL_PET1_SPECIES2,316,185,25,8
+    CONTROL         "",PB_Pet1Life,"msctls_progress32",PBS_VERTICAL | WS_BORDER,11,34,13,288
+    CONTROL         "",PB_Pet2Life,"msctls_progress32",PBS_VERTICAL | WS_BORDER,403,34,13,288
+    CTEXT           "HEALTH",CS_Pet1HealthBar,5,25,26,8
+    CTEXT           "HEALTH",CS_Pet2HealthBar,398,25,26,8
+END
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_Interface, DIALOG
+    BEGIN
+        RIGHTMARGIN, 392
+        BOTTOMMARGIN, 333
+    END
+END
+#endif    // APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+IDB_START               BITMAP                  "Images\\start.bmp"
+IDB_QUIT                BITMAP                  "Images\\quit.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+//PRJ - MegaPet1 - MFC GUI Game - 2006 - C. S. Germany
+//File 4 of 4: MFC RC File
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+#include "CPP_219_PRJ_MFC_MegaPet1_03_Resources.h"
+#include "afxres.h"
+
+IDD_MegaPet DIALOGEX 0, 0, 271, 210
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MegaPet 2.0 - 2006 C. Germany"
+FONT 10, "Comic Sans MS", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_OUTPUT,9,27,154,150,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | NOT WS_TABSTOP
+    LTEXT           "",IDC_NAME,49,10,114,15,WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "Pet Name:",IDC_STATIC,10,14,38,8
+    PUSHBUTTON      "QUIT",IDC_QUIT,226,90,26,12
+    EDITTEXT        IDC_INPUT,166,11,93,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "FEED",IDC_FEED,176,69,35,12
+    PUSHBUTTON      "TALK",IDC_TALK,176,53,35,12
+    PUSHBUTTON      "KICK",IDC_KICK,176,37,35,12
+    PUSHBUTTON      "PET",IDC_PET,214,37,35,12
+    PUSHBUTTON      "SLEEP",IDC_SLEEP,214,53,35,12
+    PUSHBUTTON      "PLAY",IDC_PLAY,214,69,35,12
+    GROUPBOX        "Actions",IDC_STATIC,166,25,93,62,BS_CENTER
+    CONTROL         102,IDC_VIEW,"Static",SS_BITMAP,173,109,80,89
+    PUSHBUTTON      "START",IDC_START,199,90,23,12
+    PUSHBUTTON      "GO",IDC_GO,173,90,23,12
+    CTEXT           "Life",IDC_STATIC,12,180,17,8
+    CTEXT           "Emotive State",IDC_STATIC,96,179,57,8
+    CTEXT           "",IDC_LIFE,9,188,26,15,WS_BORDER
+    CTEXT           "",IDC_EMOTIVESTATE,87,188,77,15,WS_BORDER
+    CTEXT           "Elapsed Days",IDC_STATIC,36,179,49,8
+    CTEXT           "",IDC_DAYS,38,188,46,15,WS_BORDER
+END
+
+
+TAZ                     BITMAP                  "taz.bmp"
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
