@@ -1,0 +1,220 @@
+//PRJ - RPG Hills of Darkness - MFC GUI Game - 2006 - C. S. Germany
+//File 7 of 7: MFC RC File
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+// Microsoft Visual C++ generated resource script.
+//
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+//#include "resource.h"
+#include "INTERFACE_MAIN_resources.h"
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+HillsOfDark DIALOGEX 0, 0, 449, 220
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP |
+WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_APPWINDOW
+CAPTION
+" Hills of Darkness 3.0 - 2006 C. Germany"
+
+MENU IDR_MENU1
+FONT 9, "Century Gothic", 400, 0, 0x0
+BEGIN
+DEFPUSHBUTTON "GO",IDGO,322,40,31,9
+PUSHBUTTON "QUIT",IDCQUIT,406,35,30,11
+EDITTEXT IDC_OUTPUT,2,22,214,191,ES_MULTILINE | ES_READONLY |
+WS_VSCROLL | NOT WS_TABSTOP,WS_EX_CLIENTEDGE
+EDITTEXT IDC_INPUT,218,20,138,18,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+PUSHBUTTON "ACTION",IDCACTION,288,40,31,9
+PUSHBUTTON "SAVE",IDCSAVE,369,35,30,11
+PUSHBUTTON "LOAD",IDCLOAD,369,22,30,11
+PUSHBUTTON "SCORES",IDCHISCORES,369,9,30,11
+PUSHBUTTON "N",IDC_NORTH,239,60,15,12
+PUSHBUTTON "S",IDC_SOUTH,239,84,15,12
+PUSHBUTTON "E",IDC_EAST,255,72,15,12
+PUSHBUTTON "W",IDC_WEST,223,72,15,12
+GROUPBOX "Direction",IDC_STATIC,218,50,57,50,BS_CENTER
+EDITTEXT IDC_INVENTORY,355,59,91,109,ES_MULTILINE | ES_READONLY |
+WS_VSCROLL,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+CTEXT "Inventory",IDC_STATIC,379,50,40,8
+CTEXT "Hitpoints",IDC_STATIC,219,0,34,8,0,WS_EX_TRANSPARENT
+CTEXT "",IDC_HITPOINTS,221,8,31,10,0,WS_EX_TRANSPARENT |
+WS_EX_CLIENTEDGE
+CTEXT "Attack",IDC_STATIC,256,0,31,8,0,WS_EX_TRANSPARENT
+CTEXT "",IDC_ATTACK,256,8,31,10,0,WS_EX_TRANSPARENT |
+WS_EX_CLIENTEDGE
+CTEXT "Defense",IDC_STATIC,289,0,34,8
+CTEXT "",IDC_DEFENSE,291,8,31,10,0,WS_EX_TRANSPARENT |
+WS_EX_CLIENTEDGE
+CTEXT "Score",IDC_STATIC,326,0,28,8
+CTEXT "",IDC_SCORE,325,8,31,10,0,WS_EX_TRANSPARENT |
+WS_EX_CLIENTEDGE
+LTEXT "Name:",IDC_STATIC,2,10,22,10
+LTEXT "",IDC_NAME,27,8,189,11,SS_CENTERIMAGE,WS_EX_TRANSPARENT |
+WS_EX_CLIENTEDGE
+PUSHBUTTON "START",IDCSTART,406,22,30,11
+PUSHBUTTON "HEALING POTION",IDD_HEAL,218,40,67,9
+GROUPBOX "Attack Weapon",IDC_STATIC,278,50,76,50,BS_CENTER,
+WS_EX_TRANSPARENT
+CONTROL "Hand to Hand",IDC_RADIOHAND,"Button",BS_AUTORADIOBUTTON,
+285,58,61,10
+CONTROL "Dagger",IDC_RADIODAGGER,"Button",BS_AUTORADIOBUTTON,285,
+68,40,10
+CONTROL "Sword",IDC_RADIOSWORD,"Button",BS_AUTORADIOBUTTON,285,
+78,36,10
+CONTROL "Long Bow",IDC_RADIOBOW,"Button",BS_AUTORADIOBUTTON,285,
+88,47,10
+PUSHBUTTON "HELP",IDCHELP,406,9,30,11
+CONTROL "",IDC_VIEW,"Static",SS_BITMAP | SS_CENTERIMAGE |
+WS_BORDER,218,110,133,104,WS_EX_CLIENTEDGE
+CTEXT "View",IDC_STATIC,266,102,34,8
+GROUPBOX "MENU",IDC_STATIC,364,0,77,49,BS_CENTER
+EDITTEXT IDC_CONQUESTS,352,180,94,34,ES_MULTILINE | ES_READONLY |
+WS_VSCROLL,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+CTEXT "Conquests",IDC_STATIC,377,171,37,8
+END
+
+IDD_SAVE DIALOGEX 0, 0, 211, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hills of Darkness 3.0 - C. Germany 2006 - Save Character"
+FONT 9, "Comic Sans MS", 400, 0, 0x0
+BEGIN
+DEFPUSHBUTTON "SAVE",IDSAVEOK,146,17,50,14
+PUSHBUTTON "EXIT",2,146,35,50,14
+EDITTEXT IDC_SaveName,8,18,130,12,ES_AUTOHSCROLL
+LTEXT "Name To Save Character File As:",IDC_STATIC,9,8,124,10
+EDITTEXT IDC_SavePassword,8,44,130,12,ES_PASSWORD |
+ES_AUTOHSCROLL
+LTEXT "Password (Up to 10 characters):",IDC_STATIC,9,34,124,10
+END
+
+IDD_LOAD DIALOGEX 0, 0, 211, 71
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hills of Darkness 3.0 - C. Germany 2006 - Load Character"
+FONT 9, "Comic Sans MS", 400, 0, 0x0
+BEGIN
+DEFPUSHBUTTON "LOAD",IDLOADOK,146,17,50,14
+PUSHBUTTON "EXIT",IDLOADCANCEL,146,35,50,14
+EDITTEXT IDC_LoadName,8,18,130,12,ES_AUTOHSCROLL
+LTEXT "Name To Load Character File As:",IDC_STATIC,9,8,124,10
+EDITTEXT IDC_LoadPassword,8,44,130,12,ES_PASSWORD |
+ES_AUTOHSCROLL
+LTEXT "Password (Up to 10 characters):",IDC_STATIC,9,34,124,10
+END
+
+IDD_SHAMAN DIALOGEX 0, 0, 49, 23
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_CONTROL | WS_POPUP |
+WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE
+FONT 48, "Fat", 400, 0, 0x0
+BEGIN
+LTEXT "BAD Karma!",IDC_STATIC,4,4,42,8
+LTEXT "Seriously ...",IDC_STATIC,3,12,43,8
+END
+
+IDD_DRAGON DIALOGEX 0, 0, 49, 18
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_SYSMENU
+FONT 48, "Fat", 400, 0, 0x0
+BEGIN
+LTEXT "Are you sure",IDC_STATIC,2,2,46,8
+LTEXT "about this?",IDC_STATIC,2,9,47,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+POPUP "&File"
+BEGIN
+MENUITEM "E&xit", ID_FILE_EXIT
+MENUITEM "&Save Game", ID_FILE_SAVEGAME
+MENUITEM "&Load Game", ID_FILE_LOADGAME
+END
+POPUP "&Other"
+BEGIN
+MENUITEM "&Help", ID_OTHER_HELP
+MENUITEM "&About", ID_OTHER_ABOUT
+END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE
+BEGIN
+"resrc1.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+"#include ""resource.h""\r\n"
+"#include ""afxres.h""\r\n"
+"\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+"\r\n"
+"\0"
+END
+
+#endif // APSTUDIO_INVOKED
+
+#endif // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif // not APSTUDIO_INVOKED
+
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
