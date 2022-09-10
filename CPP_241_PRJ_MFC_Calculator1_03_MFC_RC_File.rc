@@ -1,0 +1,133 @@
+//PRJ - Calculator 1 - MFC GUI App - 2006 - C. S. Germany
+//File 3 of 3: MFC RC File
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+// Microsoft Visual C++ generated resource script.
+//
+#include "CPP_240_PRJ_MFC_Calculator1_02_Resources.h"
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+#endif    // APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+IDD_Interface DIALOGEX 0, 0, 170, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calculator 3.0 - 2006 C.Germany"
+MENU IDR_MENU1
+FONT 10, "Trebuchet MS", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_InputOutput,9,18,148,18,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CTEXT           "Calculator 3.0",IDC_STATIC,23,7,121,11
+    PUSHBUTTON      "7",IDC_Num7,24,53,13,10
+    PUSHBUTTON      "8",IDC_Num8,42,53,13,10
+    PUSHBUTTON      "9",IDC_Num9,60,53,13,10
+    PUSHBUTTON      "4",IDC_Num4,24,68,13,10
+    PUSHBUTTON      "5",IDC_Num5,42,68,13,10
+    PUSHBUTTON      "6",IDC_Num6,60,68,13,10
+    PUSHBUTTON      "1",IDC_Num1,24,83,13,10
+    PUSHBUTTON      "2",IDC_Num2,42,83,13,10
+    PUSHBUTTON      "3",IDC_Num3,60,83,13,10
+    PUSHBUTTON      "=",IDC_NumEquals,24,98,13,10
+    PUSHBUTTON      "0",IDC_Num0,42,98,13,10
+    PUSHBUTTON      ".",IDC_NumPeriod,60,98,13,10
+    GROUPBOX        "Numerical",IDC_STATIC,18,43,63,69,BS_CENTER
+    PUSHBUTTON      "+",IDC_NumAdd,93,56,13,10
+    PUSHBUTTON      "-",IDC_NumSubtract,93,70,13,10
+    PUSHBUTTON      "/",IDC_NumDivide,93,84,13,10
+    PUSHBUTTON      "*",IDC_NumMultiply,93,98,13,10
+    GROUPBOX        "Ops",IDC_STATIC,89,43,22,69,BS_CENTER
+    PUSHBUTTON      "Cu",IDC_NumCube,127,52,20,10
+    PUSHBUTTON      "Sq",IDC_NumSquare,127,66,20,10
+    PUSHBUTTON      "SqRt",IDC_NumSquareRoot,127,80,20,10
+    PUSHBUTTON      "M +",IDC_NumMemory,126,94,21,10
+    PUSHBUTTON      "CE",IDC_NumCE,126,121,21,10
+    GROUPBOX        "Functions",IDC_STATIC,118,43,38,91,BS_CENTER
+    PUSHBUTTON      "Farenheit",IDC_Farenheit,20,114,37,9
+    PUSHBUTTON      "Celcius",IDC_Celcius,60,114,29,9
+    PUSHBUTTON      "Kilometers",IDC_Kilometers,20,125,37,9
+    PUSHBUTTON      "Miles",IDC_Miles,60,125,29,9
+    PUSHBUTTON      "M -",IDC_MemoryErase,126,108,21,10
+    PUSHBUTTON      "Pow",IDC_POWER,93,114,17,9
+    PUSHBUTTON      "Quit",IDC_QUIT,93,125,17,9
+END
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+IDR_MENU1 MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    POPUP "&Other"
+    BEGIN
+        MENUITEM "&Help",                       ID_OTHER_HELP
+        MENUITEM "&About",                      ID_OTHER_ABOUT
+    END
+END
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
