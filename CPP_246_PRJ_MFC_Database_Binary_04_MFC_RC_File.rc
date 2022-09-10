@@ -1,0 +1,99 @@
+//PRJ - Database - Binary File Storage and Access - MFC GUI App - 2004 - C. S. Germany
+//File 4 of 4: MFC RC File
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+#include "afxres.h"
+#include "CPP_243_PRJ_MFC_Database_Binary_01_IDs.h"
+
+//----------------------------------------------------------------------------------------------------------------------------
+
+// Dialog.  Also includes name of menu to be loaded with the main form.
+ADDRESS DIALOGEX 50, 50, 409, 178
+STYLE DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Edit"
+MENU IDR_MENU1    //Name of menu to be loaded with form.  It is defined below.
+FONT 8, "Trebuchet MS"
+
+BEGIN
+
+    CTEXT           "MFC Address Book 1.0",IDC_STATIC,153,0,88,12,SS_CENTERIMAGE
+
+    PUSHBUTTON      "PREV",IDC_PREVIOUS,81,153,29,12
+    PUSHBUTTON      "OPEN",IDC_OPEN,119,153,29,12
+    PUSHBUTTON      "SAVE",IDC_SAVE,157,153,29,12
+    PUSHBUTTON      "NEXT",IDC_NEXT,195,153,29,12
+
+    EDITTEXT        IDC_FIRST,55,31,196,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LAST,56,56,195,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADDRESS,56,79,195,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PHONE,55,104,196,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EMAIL,55,128,197,12,ES_AUTOHSCROLL
+
+    LTEXT           "First Name:",IDC_STATIC,10,32,41,10
+    LTEXT           "Last Name:",IDC_STATIC,10,57,41,10
+    LTEXT           "Address:",IDC_STATIC,10,81,41,10
+    LTEXT           "Phone:",IDC_STATIC,10,105,41,10
+    LTEXT           "Email:",IDC_STATIC,10,130,41,10
+
+    GROUPBOX        "File Operations",IDC_FO,300,131,74,27,BS_CENTER
+
+    PUSHBUTTON      "SAVE",IDC_SAVEFILE,339,142,29,12
+    PUSHBUTTON      "OPEN",IDC_OPENFILE,306,142,29,12
+
+    CTEXT           "http://www.networkingprogramming.com",IDC_STATIC,127,8,
+                    143,11,SS_CENTERIMAGE
+    CTEXT           "Record #:",IDC_STATIC,9,10,35,11,SS_CENTERIMAGE
+
+    EDITTEXT        IDC_RECORDNUMBER,55,11,38,12,ES_AUTOHSCROLL
+
+    GROUPBOX        "Record Operations",IDC_RECORDOP,37,144,232,26,BS_CENTER
+
+    CONTROL         "First Name",IDC_RADIO_FIRST,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,285,69,61,9
+    CONTROL         "Last Name",IDC_RADIO_LAST,"Button",BS_AUTORADIOBUTTON,285,80,49,9
+    CONTROL         "Email",IDC_RADIO_EMAIL,"Button",BS_AUTORADIOBUTTON,285,91,46,9
+
+    EDITTEXT        IDC_SEARCHFIELD,284,54,106,12,ES_AUTOHSCROLL
+
+    GROUPBOX        "Search",IDC_SEARCHGROUP,271,43,128,68,BS_CENTER | 
+                    WS_GROUP
+
+    PUSHBUTTON      "SEARCH",IDC_SEARCH,344,89,41,12
+    PUSHBUTTON      "EXIT",IDC_EXIT,320,8,29,12
+    PUSHBUTTON      "LAST",IDC_LASTRECORD,233,153,29,12
+    PUSHBUTTON      "FIRST",IDC_FIRSTRECORD,43,153,29,12
+
+END
+//----------------------------------------------------------------------------------------------------------------------------
+
+//Menu
+IDR_MENU1 MENU DISCARDABLE 
+
+BEGIN
+
+    POPUP "&File"
+    
+          BEGIN       
+                MENUITEM "&Open", IDC_FILE_OPEN
+                MENUITEM "&Save", IDC_FILE_SAVE
+                MENUITEM "E&xit", IDC_FILE_EXIT
+          END
+
+    POPUP "&About"
+ 
+         BEGIN
+                MENUITEM "&Information", ID_ABOUT_INFORMATION
+         END
+
+    POPUP "&Help"
+
+          BEGIN
+                MENUITEM "&Instructions", ID_HELP_INSTRUCTIONS
+          END
+
+END
+
+//---------------------------------------------------------------------------------------------------------------------------
+
